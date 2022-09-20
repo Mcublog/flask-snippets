@@ -25,7 +25,10 @@ def init():
 
 @app.route('/')
 def index():
-    return render_template('index.html', js=js_tool.get_js_render(), status_table=status_table.upd_table(StatusData().rnd()))
+    return render_template('index.html',
+                           js=js_tool.get_js_render(),
+                           svg=js_tool.get_svg_lib(),
+                           status_table=status_table.upd_table(StatusData().rnd()))
 
 @app.route('/update_info_table')
 def upd_status():

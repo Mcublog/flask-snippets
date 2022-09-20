@@ -12,3 +12,7 @@ def render_js(fname):
 def get_js_render():
     path = Path().joinpath('src/static/js/index.js')
     return render_js(str(path))
+
+def get_svg_lib():
+    path = Path().joinpath('src/static/js/svg.min.js')
+    return render_js(str(path))
