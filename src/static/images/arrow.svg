@@ -26,8 +26,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="4.489899"
-     inkscape:cx="209.69291"
-     inkscape:cy="308.91564"
+     inkscape:cx="169.3802"
+     inkscape:cy="308.91563"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -59,13 +59,13 @@
      id="layer1">
     <g
        id="g452"
-       style="fill:#00ffff">
+       style="fill:#d4aa00;stroke:none">
       <path
-         style="fill:#00ffff;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#d4aa00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 79.612497,82.411601 -3.683034,-5.391962 h -9.340181 l 3.11305,5.391962"
          id="path149" />
       <path
-         style="fill:#00ffff;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#d4aa00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 79.612497,82.411601 -3.683034,5.391962 h -9.340181 l 3.11305,-5.391962"
          id="path149-2" />
     </g>

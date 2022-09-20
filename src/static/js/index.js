@@ -1,20 +1,13 @@
 var ONLINE_CHECKING = true;
 
-
-
 // define document width and height
 var width = 450, height = 300
 // create SVG document and set its size
 var draw;
-var image;
+var arrows = new Array();
 
 window.onload = function () {
 	draw = SVG().addTo('#arrow').size(width, height);
-
-	image = draw.image('static/images/arrow.svg');
-	draw.image('static/images/battery.svg').size(250, 250).move(0,0);
-	draw.image('static/images/battery.svg').size(250, 250).move(200,0);
-
 	charge_animation();
 	start_state_check();
 }
@@ -48,12 +41,23 @@ function get_bms_online_checking(){
 }
 
 function charge_animation(){
-	image.size(500, 500).move(-50,-50);
-	image.animate({
-		duration: 1000,
-		when: 'now',
-		wait: 200
-	}).move(100, -50);
+	arrows = new Array(
+		draw.image('static/images/arrow.svg'),
+		draw.image('static/images/arrow.svg'),
+		draw.image('static/images/arrow.svg')
+	);
+	draw.image('static/images/battery.svg').size(250, 250).move(0,0);
+	draw.image('static/images/battery.svg').size(250, 250).move(200,0);
+	arrows.forEach(function(arrow, index) {
+		let multiply = 115 / arrows.length;
+		arrow.size(500, 500).move(-40-(index*multiply),-50);
+		arrow.animate({
+			duration: 1000,
+			delay: 0,
+			when: 'now',
+			swing: true
+		}).attr({ opacity: 0 }).move(150-(index*multiply), -50);
+	});
 
 	setTimeout(charge_animation, 1000);
 }
