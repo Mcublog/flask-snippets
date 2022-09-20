@@ -11,10 +11,19 @@
   <link rel="stylesheet" href={{ stylesheet_with_none_cursor }}>
   <title>Flask snippets</title>
   <script>
+    {{ svg| safe }}
     {{ js | safe }}
   </script>
   <div>
     {{ status_table }}
+  </div>
+  <div id="arrow"></div>
+  <!-- <div>
+    <div class="Row">
+      <div class="Column" id="batterySrc"></div>
+      <div class="Column" id="arrow"></div>
+      <div class="Column" id="batterySink"></div>
+  </div> -->
   </div>
 </head>
 </body>
