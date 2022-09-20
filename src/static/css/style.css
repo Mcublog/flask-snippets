@@ -1,0 +1,216 @@
+html {
+  touch-action:none;
+}
+
+body {
+    background-color: #508975;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /* padding: 5px; */
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#status_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#status_table tr{
+    padding: 0.5rem;
+    font-size: 15px;
+    text-align: left;
+}
+
+#status_table th{
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+#monitor_table, #flags {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#monitor_table td th, #flags td th{
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+#control_row td th {
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+.controls {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+    margin: 15px;
+    font: bold 20px Arial;
+    text-decoration: none;
+    background-color: #1962d1;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.button:hover:enabled {
+	background: #434343;
+	letter-spacing: 1px;
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+#start_cbox:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.center_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_container {
+    margin: 0 auto;
+}
+
+.left_container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left:250px;
+}
+
+
+.table_main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.table  td{
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+.table th{
+    padding: 0.35rem;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+  transform:scale(2, 2);
+}
+
+.checkboxes label {
+  white-space: nowrap;
+  padding-left:20px;
+  vertical-align: sub;
+}
+.checkboxes input {
+    vertical-align: middle;
+}
+.checkboxes label span {
+    vertical-align: middle;
+}
+
+#ck-button {
+    margin:30px;
+    font: bold 20px Arial;
+    background-color:#1962d1;
+    overflow:auto;
+    color:#fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#ck-button:hover {
+    margin:30px;
+    background-color:#434343;
+    transition: all 0.4s ease 0s;
+}
+
+#ck-button label {
+    width:4.0em;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding: 15px 60px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+    opacity: 0;
+}
+
+#ck-button input:checked + span {
+    background-color:#911;
+    color:#fff;
+}
+
+#ck-button input:disabled + span {
+    background-color:#434343;
+    color:#666666;
+}
+
+#black_div {
+    background-color:black;
+    color: #fff;
+}
+
+#montable {
+    border-collapse: collapse;
+    border: 1px solid #1962d1;
+}
+
+#montable td {
+    border: 1px solid #1962d1;
+}

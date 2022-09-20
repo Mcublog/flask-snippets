@@ -1,0 +1,28 @@
+html {
+  /* touch-action:none; */
+    cursor: none;
+}
+
+.button {
+    cursor: none;
+}
+
+#start_cbox, #start_cbox_name {
+    cursor: none;
+}
+
+#start_cbox:disabled {
+    cursor: none;
+}
+
+input[type="checkbox"] {
+    cursor: none;
+}
+
+.checkboxes label {
+    cursor: none;
+}
+
+#ck-button {
+    cursor: none;
+}
