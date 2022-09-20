@@ -7,6 +7,7 @@ from pylogus import logger_init
 
 from status_table import StatusData, StatusTable
 from utils import js_tool
+from version import __version__
 
 app = Flask(__name__)
 
@@ -23,9 +24,11 @@ status_table = StatusTable()
 def init():
     logger.info("Hello")
 
+
 @app.route('/')
 def index():
     return render_template('index.html',
+                           version=__version__,
                            js=js_tool.get_js_render(),
                            svg=js_tool.get_svg_lib(),
                            status_table=status_table.upd_table(StatusData().rnd()))
