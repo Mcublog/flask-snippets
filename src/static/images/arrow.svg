@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="arrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="4.489899"
+     inkscape:cx="169.3802"
+     inkscape:cy="308.91563"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="82.499998,214.5884"
+       orientation="0,-1"
+       id="guide141" />
+    <sodipodi:guide
+       position="75.929463,217.4759"
+       orientation="1,0"
+       id="guide143" />
+    <sodipodi:guide
+       position="66.589284,219.98036"
+       orientation="1,0"
+       id="guide145" />
+    <sodipodi:guide
+       position="79.612498,221.95447"
+       orientation="1,0"
+       id="guide147" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g452"
+       style="fill:#d4aa00;stroke:none">
+      <path
+         style="fill:#d4aa00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 79.612497,82.411601 -3.683034,-5.391962 h -9.340181 l 3.11305,5.391962"
+         id="path149" />
+      <path
+         style="fill:#d4aa00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 79.612497,82.411601 -3.683034,5.391962 h -9.340181 l 3.11305,-5.391962"
+         id="path149-2" />
+    </g>
+  </g>
+</svg>

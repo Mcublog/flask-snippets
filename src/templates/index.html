@@ -9,12 +9,18 @@
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
   <link rel="stylesheet" href={{ stylesheet_with_none_cursor }}>
-  <title>Flask snippets</title>
+  <title>Flask snippets v{{ version }}</title>
   <script>
+    {{ svg| safe }}
     {{ js | safe }}
   </script>
-  <div>
-    {{ status_table }}
+  <h2> Flaks snippets v{{ version }}</h2>
+  <div class="center_container">
+    <div class="table_container">
+      {{ status_table }}
+    </div>
+  </div>
+    <div id="arrow" class="center_container"></div>
   </div>
 </head>
 </body>

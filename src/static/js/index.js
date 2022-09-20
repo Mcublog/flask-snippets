@@ -1,7 +1,15 @@
 var ONLINE_CHECKING = true;
 
+// define document width and height
+var width = 450, height = 300
+// create SVG document and set its size
+var draw;
+var arrows = new Array();
+
 window.onload = function () {
-	set_bms_online_checking(true);
+	draw = SVG().addTo('#arrow').size(width, height);
+	charge_animation();
+	start_state_check();
 }
 
 function post_json(route, json) {
@@ -32,9 +40,32 @@ function get_bms_online_checking(){
 	return ONLINE_CHECKING;
 }
 
+function charge_animation(){
+	arrows = new Array(
+		draw.image('static/images/arrow.svg'),
+		draw.image('static/images/arrow.svg'),
+		draw.image('static/images/arrow.svg')
+	);
+	draw.image('static/images/battery.svg').size(250, 250).move(0,0);
+	draw.image('static/images/battery.svg').size(250, 250).move(200,0);
+	arrows.forEach(function(arrow, index) {
+		let multiply = 115 / arrows.length;
+		arrow.size(500, 500).move(-40-(index*multiply),-50);
+		arrow.animate({
+			duration: 1000,
+			delay: 0,
+			when: 'now',
+			swing: true
+		}).attr({ opacity: 0 }).move(150-(index*multiply), -50);
+	});
+
+	setTimeout(charge_animation, 1000);
+}
+
 function start_state_check() {
 	if (get_bms_online_checking() == true)
 	{
+
 		let xhr = new (XMLHttpRequest);
 		xhr.open("GET", "update_info_table", true);
 		xhr.send(null);
