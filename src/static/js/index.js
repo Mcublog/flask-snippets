@@ -41,6 +41,8 @@ function get_bms_online_checking(){
 }
 
 function charge_animation(){
+	draw.image('static/images/arrow.svg').size(500, 500).move(-35,-50);
+	draw.image('static/images/arrow.svg').size(500, 500).move(75,-50);
 	arrows = new Array(
 		draw.image('static/images/arrow.svg'),
 		draw.image('static/images/arrow.svg'),
