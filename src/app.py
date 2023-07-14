@@ -20,9 +20,7 @@ logger = logger_init(__name__, logging.INFO)
 
 #---------------------- Main page --------------
 status_table = StatusTable()
-@app.before_first_request
-def init():
-    logger.info("Hello")
+
 
 
 @app.route('/')
