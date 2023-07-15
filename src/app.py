@@ -12,7 +12,7 @@ from version import __version__
 app = Flask(__name__)
 
 log = logging.getLogger('werkzeug')
-log.setLevel(logging.ERROR)
+log.setLevel(logging.INFO)
 
 logger = logger_init(__name__, logging.INFO)
 
